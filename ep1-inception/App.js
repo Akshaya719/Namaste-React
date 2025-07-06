@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
 /**
  * <div id="parent">
  * <div id="child">
@@ -12,12 +15,12 @@
  */
 const parent = React.createElement("div",{id:"parent"},
     React.createElement("div",{id:"child"},
-        [React.createElement("h1",{},"I m an h1 tag"),
-        React.createElement("h2",{},"I am an h2 tag")]),
+        [React.createElement("h1",{key:"h1"},"I m an h1 tag"),
+        React.createElement("h2",{key:"h2"},"I am an h2 tag")]),
 
         React.createElement("div",{id:"child2"},
-            [React.createElement("h1",{},"I m an h1 tag"),
-            React.createElement("h2",{},"I am an h2 tag")],
+            [React.createElement("h1",{key:"h3"},"I m an h1 tag"),
+            React.createElement("h2",{key:"h4"},"I am an h2 tag")],
     ),
 );
 //JSX
