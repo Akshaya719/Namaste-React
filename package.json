@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "This is Namaste  React Series",
   "scripts": {
+    "start": "parcel ep1-inception/index.html",
+    "build": "parcel build  ep1-inception/index.html",
     "test": "jest"
+    
+
   },
   "repository": {
     "type": "git",
